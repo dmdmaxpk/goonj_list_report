@@ -38,11 +38,7 @@ function App() {
     <div className="App">
         <div className='dropbox' {...getRootProps()}>
           <input {...getInputProps()} />
-          {
-            isDragActive ?
-              <p>Drop the files here ...</p> :
-              <p>Drag 'n' drop some files here, or click to select files</p>
-          }
+          <p>Please upload a TEXT file. Only .txt files are accepted.</p>
           <p>{listFile ? listFile.name : ''}</p>
         </div>
         <div style={{textAlign: "center"}}>
