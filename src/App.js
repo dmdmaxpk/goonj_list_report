@@ -16,13 +16,11 @@ function App() {
   const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop});
 
   const handleSubmit = () => {
-    let baseUrl = '';
-    // if(report === 'purge') baseUrl = 'http://10.0.1.76:3011';
-    // else if(report === 'revReport') baseUrl = 'http://3.122.255.224:3011';
+    let baseUrl = 'http://3.122.255.224:3011';
 
     
-    if(report === 'purge') baseUrl = 'http://localhost:3011';
-    else if(report === 'revReport') baseUrl = 'http://localhost:3011';
+    // if(report === 'purge') baseUrl = 'http://localhost:3011';
+    // else if(report === 'revReport') baseUrl = 'http://localhost:3011';
 
     let formData = new FormData();
     formData.append("file", listFile);
