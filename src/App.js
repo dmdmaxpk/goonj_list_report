@@ -17,7 +17,7 @@ function App() {
   const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop});
 
   const handleSubmit = () => {
-    let baseUrl = 'http://3.122.255.224:3011';
+    let baseUrl = 'http://3.66.32.76:3011';
     let emailsArray = emails.split(',');
     
     // if(report === 'purge') baseUrl = 'http://localhost:3011';
